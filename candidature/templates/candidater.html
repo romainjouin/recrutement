@@ -23,19 +23,27 @@
 
     <title>Mémorandum - recrutement</title>
   </head>
-  
-  <h2>18 juillet 2017</h2>
+  <div class="container container-table">
+    <div class="row vertical-center-row">
+        <div class="text-center col-md-4 col-md-offset-4" >
 
-<p>
-	Bonjour,</p>
-<p>
-Vous avez postulé à notre offre pour un datascientist technique pour une mission longue chez un client dans le domaine de la santé à Paris.<br>
-Au vu du nombre de réponse, nous vous demandons de remplir le formulaire ci dessous pour clarifier votre candidature. <br>
-Merci !<br>
-Romain. 
-</p>
-<form action="{%url 'enregistrer' %}" method="POST">
-	{% csrf_token %}		
-	{{ form.as_p }}
-	<button action"submit">submit</button>
-</form>
+
+			<h2>18 juillet 2017</h2>
+
+			<p>
+				Bonjour,</p>
+			<p align="left">
+			Vous avez postulé à notre offre pour un datascientist technique pour une mission longue chez un client dans le domaine de la santé à Paris.<br>
+			Au vu du nombre de réponse, nous vous demandons de remplir le formulaire ci dessous pour clarifier votre candidature. <br>
+			Merci !<br>
+			Romain. 
+			</p>
+			<form action="{%url 'enregistrer' %}" method="POST">
+				{% csrf_token %}		
+				{{ form.as_p }}
+				<button action"submit">submit</button>
+			</form>
+
+        </div>
+    </div>
+</div>
